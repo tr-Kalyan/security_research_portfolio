@@ -169,7 +169,8 @@ h1 em {
   font-size: 0.52em;
   margin-top: 14px;
   max-width: 16ch;
-  line-height: 1.05;
+  line-height: 1.18;
+  letter-spacing: 0.01em;
 }
 
 .lede {
@@ -470,6 +471,13 @@ footer a:hover { color: var(--lime); }
   .hero, .section, .stats, .hire, footer { width: calc(100% - 32px); }
   .stats, .grid-4, .edu, .projects { grid-template-columns: 1fr; }
   .hero { padding-top: 56px; }
+  h1 em {
+    font-size: 0.42em;
+    max-width: none;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+    margin-top: 12px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
