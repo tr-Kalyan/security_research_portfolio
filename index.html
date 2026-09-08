@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kalyan TR — Smart Contract Security Researcher</title>
+  <meta name="description" content="Independent smart contract security researcher. Validated Highs on Immunefi (Quantus, Firelight), Sherlock, HackenProof, Code4rena, and GuardianAudits. EVM, Solana, Stellar, cross-chain. Open for audits and roles." />
+  <meta name="keywords" content="smart contract auditor, web3 security researcher, Solidity, Solana, Anchor, Immunefi, Sherlock, Code4rena, HackenProof, Cantina, Kalyan TR" />
+  <meta name="author" content="Kalyan TR" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://tr-kalyan.github.io/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Kalyan TR — Smart Contract Security Researcher" />
+  <meta property="og:description" content="Validated Highs on Immunefi, Sherlock, HackenProof. Falsification-first researcher. EVM · Solana · Stellar · Cross-chain. Open for audits." />
+  <meta property="og:url" content="https://tr-kalyan.github.io/" />
+  <meta property="og:site_name" content="Kalyan TR" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@kalyan__tr" />
+  <meta name="twitter:creator" content="@kalyan__tr" />
+  <meta name="twitter:title" content="Kalyan TR — Smart Contract Security Researcher" />
+  <meta name="twitter:description" content="Validated Highs on Immunefi, Sherlock, HackenProof. Open for audits and associate researcher roles." />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    (function () {
+      const saved = localStorage.getItem("theme");
+      const theme = saved || (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+      document.documentElement.dataset.theme = theme;
+    })();
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Kalyan TR",
+    "jobTitle": "Smart Contract Security Researcher",
+    "url": "https://tr-kalyan.github.io/",
+    "email": "mailto:kalyansde1@gmail.com",
+    "sameAs": [
+      "https://x.com/kalyan__tr",
+      "https://github.com/tr-Kalyan",
+      "https://www.linkedin.com/in/kalyan-tr/"
+    ],
+    "knowsAbout": ["Solidity", "Solana", "Anchor", "Foundry", "Smart contract auditing", "Cross-chain bridges", "DeFi security"],
+    "alumniOf": ["JP Morgan", "Franklin Templeton"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <a class="nav-mark" href="#top">K<span>.</span></a>
+    <nav>
+      <a href="#findings">Findings</a>
+      <a href="#method">Method</a>
+      <a href="#work">Work</a>
+      <button class="theme-toggle" type="button" id="theme-toggle" aria-label="Switch to light mode">
+        <span class="icon-sun" aria-hidden="true">☀</span>
+        <span class="icon-moon" aria-hidden="true">☾</span>
+      </button>
+      <a href="#hire" class="nav-cta">Hire</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <p class="eyebrow">
+        <span class="live-dot" aria-hidden="true"></span>
+        Open for audits · contests · associate SR roles
+      </p>
+      <h1>
+        Kalyan TR
+        <em>finds the bug that ships past the first pass.</em>
+      </h1>
+      <p class="lede">
+        Smart contract security researcher. Five years in regulated-domain QA at
+        JP Morgan and Franklin Templeton, now full-time on EVM, Solana, Stellar,
+        and cross-chain protocols. Competing on Immunefi, Sherlock, HackenProof,
+        Code4rena, and Cantina.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="https://hackenproof.com/hackers/Kalyan-tr" target="_blank" rel="noopener">HackenProof</a>
+        <a class="btn ghost" href="https://audits.sherlock.xyz/watson/Kalyan__tr" target="_blank" rel="noopener">Sherlock</a>
+        <a class="btn ghost" href="https://github.com/tr-Kalyan/web3-security-findings" target="_blank" rel="noopener">Findings repo</a>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Track record">
+      <article>
+        <strong>2</strong>
+        <span>Immunefi Highs confirmed<br />payout by 30 Sep 2026</span>
+      </article>
+      <article>
+        <strong>1C · 4H · 6M</strong>
+        <span>+ 10 Low<br />across live programs</span>
+      </article>
+      <article>
+        <strong>5+</strong>
+        <span>Years regulated QA<br />JP Morgan · Templeton</span>
+      </article>
+      <article>
+        <strong>3</strong>
+        <span>Chains in scope<br />EVM · Solana · Stellar</span>
+      </article>
+    </section>
+
+    <section id="findings" class="section">
+      <header class="section-head">
+        <p class="kicker">01 — Proof</p>
+        <h2>Validated findings</h2>
+        <p>
+          Every row is confirmed by a platform or protocol team.
+          Duplicate means independently found the same bug as the lead reporter — credit shared, bug real.
+        </p>
+      </header>
+
+      <div class="filters" role="tablist" aria-label="Filter findings">
+        <button class="chip active" data-filter="all">All</button>
+        <button class="chip" data-filter="immunefi">Immunefi</button>
+        <button class="chip" data-filter="hackenproof">HackenProof</button>
+        <button class="chip" data-filter="sherlock">Sherlock</button>
+        <button class="chip" data-filter="code4rena">Code4rena</button>
+        <button class="chip" data-filter="guardian">Guardian</button>
+      </div>
+
+      <div class="table-wrap">
+        <table class="findings">
+          <thead>
+            <tr>
+              <th>Protocol</th>
+              <th>Platform</th>
+              <th>Findings</th>
+              <th>Status</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr data-platform="immunefi">
+              <td>
+                <div class="proto">Quantus</div>
+                <div class="sub">Post-quantum L1 · Substrate / Rust</div>
+              </td>
+              <td>Immunefi</td>
+              <td><span class="sev high">1 High</span></td>
+              <td><span class="status pending">Confirmed · payout by 30 Sep</span></td>
+              <td class="muted">Private until paid</td>
+            </tr>
+            <tr data-platform="immunefi">
+              <td>
+                <div class="proto">Firelight</div>
+                <div class="sub">On-chain cover · ERC-4626 vault</div>
+              </td>
+              <td>Immunefi</td>
+              <td><span class="sev high">1 High</span></td>
+              <td><span class="status pending">Confirmed · payout by 30 Sep</span></td>
+              <td class="muted">Private until paid</td>
+            </tr>
+            <tr data-platform="sherlock">
+              <td>
+                <div class="proto">Fluid DEX V2</div>
+                <div class="sub">DEX · first paid contest finding</div>
+              </td>
+              <td>Sherlock</td>
+              <td><span class="sev med">1 Medium</span></td>
+              <td><span class="status paid">Paid · #9</span></td>
+              <td><a href="https://github.com/tr-Kalyan/web3-security-findings/tree/main/sherlock/Fluid-dex%20V2" target="_blank" rel="noopener">Report →</a></td>
+            </tr>
+            <tr data-platform="hackenproof">
+              <td>
+                <div class="proto">Hyperbridge</div>
+                <div class="sub">ISMP / cross-chain coprocessor</div>
+              </td>
+              <td>HackenProof</td>
+              <td><span class="sev high">1 High</span> <span class="tag">Dup</span></td>
+              <td><span class="status valid">Valid · shared credit</span></td>
+              <td><a href="https://github.com/tr-Kalyan/web3-security-findings/tree/main/HackenProof/HyperBridge%20Protocol" target="_blank" rel="noopener">Report →</a></td>
+            </tr>
+            <tr data-platform="hackenproof">
+              <td>
+                <div class="proto">Solv BTC+</div>
+                <div class="sub">BTC yield / restaking</div>
+              </td>
+              <td>HackenProof</td>
+              <td><span class="sev crit">1 Critical</span> <span class="tag">Dup</span></td>
+              <td><span class="status valid">Valid · shared credit</span></td>
+              <td><a href="https://github.com/tr-Kalyan/web3-security-findings/tree/main/HackenProof/Solv%20Protocol" target="_blank" rel="noopener">Report →</a></td>
+            </tr>
+            <tr data-platform="hackenproof">
+              <td>
+                <div class="proto">0xMarkets</div>
+                <div class="sub">On-chain markets</div>
+              </td>
+              <td>HackenProof</td>
+              <td>
+                <span class="sev high">1 High</span>
+                <span class="sev med">4 Medium</span>
+              </td>
+              <td><span class="status valid">Validated</span></td>
+              <td class="muted">—</td>
+            </tr>
+            <tr data-platform="guardian">
+              <td>
+                <div class="proto">Limit Break AMM</div>
+                <div class="sub">AMM · collaborative audit</div>
+              </td>
+              <td>GuardianAudits</td>
+              <td><span class="sev med">1 Medium</span></td>
+              <td><span class="status valid">Validated</span></td>
+              <td><a href="https://github.com/tr-Kalyan/web3-security-findings/tree/main/GuardianAudits/LimitBreak" target="_blank" rel="noopener">Report →</a></td>
+            </tr>
+            <tr data-platform="code4rena">
+              <td>
+                <div class="proto">Jupiter Lend</div>
+                <div class="sub">Solana lending</div>
+              </td>
+              <td>Code4rena</td>
+              <td><span class="sev low">2 Low</span></td>
+              <td><span class="status valid">Validated</span></td>
+              <td><a href="https://github.com/tr-Kalyan/web3-security-findings/tree/main/code4rena/Jupiter%20Lend" target="_blank" rel="noopener">Report →</a></td>
+            </tr>
+            <tr data-platform="code4rena">
+              <td>
+                <div class="proto">Monetrix</div>
+                <div class="sub">Synthetic / vault</div>
+              </td>
+              <td>Code4rena</td>
+              <td><span class="sev low">2 Low</span></td>
+              <td><span class="status valid">Validated</span></td>
+              <td><a href="https://github.com/tr-Kalyan/web3-security-findings/tree/main/code4rena/Monterix" target="_blank" rel="noopener">Report →</a></td>
+            </tr>
+            <tr data-platform="code4rena">
+              <td>
+                <div class="proto">K2</div>
+                <div class="sub">Contest findings</div>
+              </td>
+              <td>Code4rena</td>
+              <td><span class="sev low">4 Low</span></td>
+              <td><span class="status valid">Validated</span></td>
+              <td class="muted">—</td>
+            </tr>
+            <tr data-platform="sherlock">
+              <td>
+                <div class="proto">XRP Ledger</div>
+                <div class="sub">XRPL amendments</div>
+              </td>
+              <td>Sherlock</td>
+              <td><span class="sev low">1 Low</span></td>
+              <td><span class="status valid">Validated</span></td>
+              <td class="muted">—</td>
+            </tr>
+            <tr data-platform="codehawks">
+              <td>
+                <div class="proto">Battle Chains</div>
+                <div class="sub">Incentivized testnet / safe harbor</div>
+              </td>
+              <td>CodeHawks</td>
+              <td><span class="sev low">1 Low</span></td>
+              <td><span class="status valid">Validated</span></td>
+              <td class="muted">—</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="fineprint">
+        Duplicate (Valid) — independently identified the same vulnerability as the lead reporter. Credit is shared.
+      </p>
+    </section>
+
+    <section class="section split" id="method">
+      <header class="section-head">
+        <p class="kicker">02 — How I work</p>
+        <h2>Falsification first.<br />PoC before submit.</h2>
+      </header>
+      <ol class="method">
+        <li>
+          <h3>Falsification-first</h3>
+          <p>Kill weak hypotheses before investing in a PoC. Most “bugs” die here. The ones that survive get a test.</p>
+        </li>
+        <li>
+          <h3>Test-before-submit</h3>
+          <p>Every finding ships with a Foundry or Anchor PoC. No speculative reports. No vibes.</p>
+        </li>
+        <li>
+          <h3>Devil’s filter</h3>
+          <p>Who benefits. What is the concrete trigger. What is the honest-user harm. If that triangle doesn’t close, it isn’t a finding.</p>
+        </li>
+        <li>
+          <h3>Cross-check</h3>
+          <p>AI is a suggestion layer. Spec and code are the source of truth. I verify both before I write the report.</p>
+        </li>
+        <li>
+          <h3>Fuzz and invariants</h3>
+          <p>Foundry fuzz and invariant suites to hit the paths unit tests miss, and to prove the protocol still holds under arbitrary input.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section" id="stack">
+      <header class="section-head">
+        <p class="kicker">03 — Stack</p>
+        <h2>Where I can go deep</h2>
+      </header>
+      <div class="grid-4">
+        <article class="card">
+          <h3>Languages</h3>
+          <p>Solidity · Rust (Anchor / Solana) · Soroban / Stellar</p>
+        </article>
+        <article class="card">
+          <h3>Tooling</h3>
+          <p>Foundry (unit, fuzz, invariant) · Slither · Anchor test harnesses</p>
+        </article>
+        <article class="card">
+          <h3>Ecosystems</h3>
+          <p>EVM · Solana · Stellar</p>
+        </article>
+        <article class="card">
+          <h3>Cross-chain</h3>
+          <p>LayerZero · ISMP / Hyperbridge</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="work">
+      <header class="section-head">
+        <p class="kicker">04 — Built to audit</p>
+        <h2>Education, programs, projects</h2>
+      </header>
+
+      <div class="edu">
+        <article>
+          <p class="when">Rektoff Launchpad × Solana Foundation</p>
+          <h3>Rust Security Bootcamp — Grade A, 216 pts</h3>
+          <p>Capstone: MetaLend audit. 15 findings across admin auth, oracle validation, liquidation math, and flash-loan vectors.</p>
+        </article>
+        <article>
+          <p class="when">Blok Capital Builder Cohort #1</p>
+          <h3>ERC-2535 Diamond + ERC-4337</h3>
+          <p>Mentored by Nick Mudge. Built ModularGarden, a diamond + account-abstraction wallet framework.</p>
+        </article>
+        <article>
+          <p class="when">In progress</p>
+          <h3>M.S. Computer Science</h3>
+          <p>Formalizing the systems background that already shows up in invariant work and cross-chain reviews.</p>
+        </article>
+        <article>
+          <p class="when">Prior career</p>
+          <h3>QA, regulated finance — 5+ years</h3>
+          <p>JP Morgan and Franklin Templeton. Order flow, settlement, accounting consistency. The same instincts apply to vaults and AMMs.</p>
+        </article>
+      </div>
+
+      <div class="projects">
+        <a class="project" href="https://github.com/tr-Kalyan/verifiable-rng-protocol" target="_blank" rel="noopener">
+          <h3>Verifiable RNG Distribution</h3>
+          <p>Gas-optimized lottery with Chainlink VRF v2.5 and binary-search cumulative sum for O(log N) winner selection. Factory + auto-subscription.</p>
+          <span>Solidity · Foundry →</span>
+        </a>
+        <a class="project" href="https://github.com/tr-Kalyan/async-rwa-vault" target="_blank" rel="noopener">
+          <h3>Async Settlement RWA Vault</h3>
+          <p>ERC-4626 vault with real T+1 / T+2 settlement for tokenized Treasuries and private credit. Stable NAV, slippage protection, compliance rescind, admin yield injection. Invariant fuzz 1000 × 128 + mainnet USDC forks.</p>
+          <span>Solidity · Foundry →</span>
+        </a>
+        <a class="project" href="https://github.com/tr-Kalyan/collateralized_debt_solvency_engine" target="_blank" rel="noopener">
+          <h3>Collateralized Debt Solvency Engine</h3>
+          <p>Over-collateralized stablecoin engine with health-factor liquidation, pull-over-push payments, and invariant handlers for solvency.</p>
+          <span>Solidity · Foundry →</span>
+        </a>
+        <div class="project static">
+          <h3>ModularGarden</h3>
+          <p>ERC-2535 Diamond + ERC-4337 account-abstraction wallet framework. Mentored by Nick Mudge, Blok Capital Cohort #1.</p>
+          <span>Solidity · ERC-4337</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="hire" id="hire">
+      <p class="kicker">05 — Available</p>
+      <h2>If you are running a contest, shipping a protocol, or hiring an associate researcher — write.</h2>
+      <p class="lede">
+        Open to audit collaborations, solo engagements, and junior / associate security researcher roles.
+        Fast to start. Reports come with PoCs.
+      </p>
+      <div class="hero-actions">
+        <a class="btn primary" href="mailto:kalyansde1@gmail.com?subject=Audit%20/%20role%20inquiry">Email Kalyan</a>
+        <a class="btn ghost" href="https://x.com/kalyan__tr" target="_blank" rel="noopener">DM on X</a>
+        <a class="btn ghost" href="https://github.com/tr-Kalyan/web3-security-findings" target="_blank" rel="noopener">Findings repo</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Kalyan TR · Independent security researcher</p>
+    <p>
+      <a href="mailto:kalyansde1@gmail.com">kalyansde1@gmail.com</a>
+      ·
+      <a href="https://x.com/kalyan__tr" target="_blank" rel="noopener">@kalyan__tr</a>
+      ·
+      <a href="https://github.com/tr-Kalyan" target="_blank" rel="noopener">github.com/tr-Kalyan</a>
+      ·
+      <a href="https://www.linkedin.com/in/kalyan-tr/" target="_blank" rel="noopener">LinkedIn</a>
+    </p>
+  </footer>
+
+  <div class="toast" id="toast" role="status" hidden>Email copied</div>
+  <script src="script.js"></script>
+</body>
+</html>
